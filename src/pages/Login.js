@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 const Login = () => {
-  const { user, logIn } = UserAuth();
+  const { logIn } = UserAuth();
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
@@ -14,7 +14,6 @@ const Login = () => {
       await logIn(email, password);
       navigate('/');
     } catch (error) {
-      console.log('error===>', error);
       setError(error.message);
     }
   };

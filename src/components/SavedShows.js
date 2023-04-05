@@ -32,7 +32,7 @@ const SavedShows = () => {
         savedShows: result
       });
     } catch (error) {
-      console.log('error===>', error);
+      throw error;
     }
   };
 
