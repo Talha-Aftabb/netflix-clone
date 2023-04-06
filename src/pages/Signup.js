@@ -65,7 +65,7 @@ const Signup = () => {
                   <Link to="/login"> Sign In</Link>
                 </p>
                 <div className="w-full flex items-center justify-center pt-8">
-                  <p className="text-gray-600">Powered By Ahmedasif</p>
+                  <p className="text-gray-600">Copyright &copy; AhmedAsif</p>
                 </div>
               </form>
             </div>
